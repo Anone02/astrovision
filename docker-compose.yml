@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  api:
+    build: ./astrovision-api
+    container_name: astrovision-api
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
